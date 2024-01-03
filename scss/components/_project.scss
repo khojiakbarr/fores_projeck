@@ -1,0 +1,124 @@
+.title_projekt {
+  margin-top: 201px;
+  position: relative;
+  margin-left: 100px;
+  h3 {
+    position: relative;
+    color: #86da44;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 131.7%; /* 47.412px */
+    text-transform: uppercase;
+    margin-bottom: 90px;
+    @include mobile() {
+      font-size: 36px;
+      margin-bottom: 45px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -14px;
+      left: -33px;
+      width: 2px;
+      height: 90px;
+      background-color: #86da44;
+    }
+  }
+  span {
+    position: absolute;
+    top: -97px;
+    left: -126px;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 131.7%; /* 118.53px */
+    text-transform: uppercase;
+
+    @include mobile() {
+      font-size: 65px;
+      top: -80px;
+      left: -98px;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 466px;
+  img {
+    width: 100%;
+  }
+  span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 28px 103px 28px 24px;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 121.7%; /* 24.34px */
+    background: rgba(0, 0, 0, 0.69);
+    backdrop-filter: blur(6.004555702209473px);
+    &::after {
+      position: absolute;
+      content: "";
+      top: 19px;
+      right: 64px;
+      width: 1px;
+      height: 45px;
+      background: rgba(255, 255, 255, 0.78);
+
+      @include mobile() {
+        top: 21px;
+        right: 64px;
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  .card {
+    width: 100%;
+  }
+}
+.swiper-backface-hidden .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.mySwiper {
+  padding-bottom: 87px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 9999;
+  top: auto;
+  bottom: 0;
+  &::after {
+    color: #86da44;
+  }
+}
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 100px);
+  @include mobile() {
+    right: var(--swiper-navigation-sides-offset, 70px);
+  }
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: var(--swiper-navigation-sides-offset, 100px);
+  @include mobile() {
+    left: var(--swiper-navigation-sides-offset, 70px);
+  }
+}
+
+:root {
+  --swiper-theme-color: #86da44;
+}

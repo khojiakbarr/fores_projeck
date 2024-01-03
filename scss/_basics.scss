@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Oswald', sans-serif;
+  background: #1E1E1E;
+  
+}
+
+.container{
+  max-width: 1500px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}

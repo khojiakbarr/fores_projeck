@@ -1,0 +1,139 @@
+.hero {
+  background-image: url(../images/bg_hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -9999;
+}
+
+.line_gradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  height: 100vh;
+  background: linear-gradient(270deg, #000 -29.74%, rgba(0, 0, 0, 0) 89.47%);
+  z-index: 0;
+}
+.hero_wrapper {
+  position: relative;
+  height: 100vh;
+  z-index: 2;
+
+  h3 {
+    max-width: 660px;
+    padding: 375px 0 0 150px;
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 131.7%; /* 79.02px */
+    text-transform: uppercase;
+    span {
+      color: #86da44;
+    }
+
+    @include tablet() {
+      max-width: 380px;
+      font-size: 40px;
+      padding: 182px 0 0 100px;
+    }
+    @include media(1024px, 1350px) {
+      padding: 200px 0 0 100px;
+    }
+    @include mobile() {
+      max-width: 380px;
+      font-size: 40px;
+      padding: 203px 0 0 30px;
+    }
+  }
+
+  p {
+    max-width: 660px;
+    padding: 0 0 0 150px;
+    margin: 16px 0 38px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 167%; /* 33.4px */
+    letter-spacing: 1.2px;
+
+    @include tablet() {
+      padding: 0 0 0 100px;
+      font-size: 18px;
+    }
+    @include media(1024px, 1350px) {
+      padding: 0 0 0 100px;
+    }
+    @include mobile() {
+      max-width: 400px;
+      padding: 0 0 0 30px;
+      font-size: 15px;
+    }
+  }
+
+  a {
+    margin-left: 150px;
+    padding: 11px 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 167%; /* 33.4px */
+    letter-spacing: 1.2px;
+    border: 1px solid #86da44;
+    transition: all 0.4s ease;
+
+    &:hover {
+      background-color: #86da44;
+    }
+
+    @include tablet() {
+      margin-left: 100px;
+    }
+    @include media(1024px, 1350px) {
+      margin-left: 100px;
+    }
+    @include mobile() {
+      margin-left: 30px;
+      font-size: 15px;
+    }
+  }
+
+  & > span {
+    height: 458px;
+    width: 1px;
+    position: absolute;
+    top: 244px;
+    left: 80px;
+    background-color: #86da44;
+
+    @include tablet() {
+      height: 300px;
+      top: 144px;
+      left: 40px;
+    }
+    @include media(1024px, 1350px) {
+      height: 300px;
+      top: 217px;
+    }
+    @include mobile() {
+      height: 300px;
+      width: 1px;
+      position: absolute;
+      top: 173px;
+      left: 0px;
+    }
+  }
+}
+
+.box {
+  position: relative;
+  img {
+    position: absolute;
+    bottom: 59px;
+    right: 0;
+
+    @include mobile() {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.contact {
+  margin-top: 95px;
+  background-image: url(../images/bg_contact.png);
+  background-position: top;
+  background-size: cover;
+}
+
+.contact_wrapper {
+  display: flex;
+  justify-content: space-around;
+  @include tablet(){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @include mobile(){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.consultation {
+  padding: 121px 0 126px;
+  max-width: 354px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+
+  p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 131.7%; /* 26.34px */
+    letter-spacing: 1.2px;
+  }
+  input {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+
+    &::-ms-value {
+      color: white;
+    }
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+  a {
+    text-align: center;
+    padding: 14px 50px;
+    border: 1px solid #86da44;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 131.7%; /* 26.34px */
+    letter-spacing: 1.2px;
+  }
+}
+
+.contact_title {
+  position: relative;
+  color: #86da44;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 131.7%; /* 47.412px */
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -33px;
+    width: 2px;
+    height: 99px;
+    background-color: #86da44;
+  }
+}
+
+.info {
+  color: rgba(255, 255, 255, 0.67);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 131.7%; /* 18.438px */
+  letter-spacing: 0.84px;
+}
+
+.contacts {
+  padding: 121px 0 126px;
+  max-width: 354px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  p {
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 131.7%; /* 26.34px */
+    letter-spacing: 1.2px;
+  }
+  span {
+    color: white;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 131.7%; /* 27.657px */
+    letter-spacing: 1.26px;
+  }
+  a {
+    color: white;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 131.7%; /* 27.657px */
+    letter-spacing: 1.26px;
+  }
+}
