@@ -13,7 +13,7 @@
   width: 40vw;
   height: 100vh;
   background: linear-gradient(270deg, #000 -29.74%, rgba(0, 0, 0, 0) 89.47%);
-  z-index: 0;
+  z-index: 2;
 }
 .hero_wrapper {
   position: relative;
@@ -136,4 +136,39 @@
       display: none;
     }
   }
+}
+
+.hero_one {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero .swiper-button-next {
+  position: absolute;
+  top: 464px;
+  right: 20px;
+  transform: rotate(90deg);
+  z-index: 3;
+}
+
+.heroSwiper .swiper-pagination {
+  position: absolute;
+  top: 397px;
+  right: 31px;
 }

@@ -64,20 +64,62 @@
     <main>
       <!-- Hero -->
       <section class="hero">
+        <div class="swiper-button-next next-btn"></div>
+
+        <div class="hero_one">
+          <!-- Swiper -->
+          <div class="swiper heroSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  src="./images/forest_video_hero.mp4"
+                ></video>
+              </div>
+              <div class="swiper-slide">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  src="./images/forest_video_hero.mp4"
+                ></video>
+              </div>
+              <div class="swiper-slide">
+                <video
+                  autoplay
+                  muted
+                  loop
+                  src="./images/forest_video_hero.mp4"
+                ></video>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
         <div class="line_gradient"></div>
         <div class="container box">
           <div class="hero_wrapper">
             <h3 data-aos="fade-right" data-aos-duration="3000">
               посреди<span> леса</span> далеко от шума
             </h3>
-            <p data-aos="fade-left" data-aos-delay="100" data-aos-duration="2000" >
+            <p
+              data-aos="fade-left"
+              data-aos-delay="100"
+              data-aos-duration="2000"
+            >
               Равным образом реализация намеченных плановых заданий широкому
               кругу (специалистов) участие в формировании
             </p>
             <a data-aos="zoom-in-right" data-aos-duration="1000" href="#"
               >Связаться с нами</a
             >
-            <span data-aos="fade-up" data-aos-delay="2000" data-aos-duration="3000"></span>
+            <span
+              data-aos="fade-up"
+              data-aos-delay="2000"
+              data-aos-duration="3000"
+            ></span>
           </div>
           <a data-aos="zoom-out-left" href="#"
             ><img src="./images/jp_hause.png" alt="haus"
@@ -92,7 +134,9 @@
             <div class="about_content">
               <h3 data-aos="fade-up" data-aos-duration="1000">
                 <span>принципы</span> которых мы придерживаемся
-                <span data-aos="fade-left" data-aos-duration="2000" class="span">о нас</span>
+                <span data-aos="fade-left" data-aos-duration="2000" class="span"
+                  >о нас</span
+                >
               </h3>
               <ul class="about_list">
                 <li
@@ -369,9 +413,16 @@
       </section>
       <!--End of Conract -->
     </main>
+
     <footer id="footer" class="footer">
       <div class="container">
-        <div data-aos="fade-up" data-aos-duration="2000" class="footer_wrapper">
+        <div
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="1000"
+          data-aos-offset="0"
+          class="footer_wrapper"
+        >
           <a href="#header" class="logo">
             <h3>FOREST</h3>
             <p>INVERONMENTAL</p>
@@ -403,12 +454,40 @@
         </div>
       </div>
     </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".heroSwiper", {
+        direction: "vertical",
+        grabCursor: true,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".next-btn",
+        },
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, "-120", -500],
+          },
+          next: {
+            shadow: true,
+            translate: [0, "-120", -500],
+          },
+        },
+      });
+    </script>
 
     <!-- Initialize Swiper -->
     <script>
